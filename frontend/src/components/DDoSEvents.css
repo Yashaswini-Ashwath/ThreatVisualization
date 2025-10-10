@@ -1,0 +1,91 @@
+.ddos-container {
+    padding: 20px;
+    animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ddos-container h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.8rem;
+}
+
+.ddos-container.error {
+    color: #e74c3c;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+}
+
+.no-data {
+    text-align: center;
+    padding: 40px;
+    color: #666;
+    font-size: 1.1rem;
+}
+
+.timeline {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.event-card {
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+.event-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.event-source {
+    font-weight: bold;
+}
+
+.event-time {
+    color: #666;
+}
+
+.traffic-bar-container {
+    position: relative;
+    height: 24px;
+    background: #f0f0f0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.traffic-bar {
+    height: 100%;
+    background: linear-gradient(to right, #4CAF50, #FFC107);
+    transition: width 0.3s ease;
+}
+
+.traffic-volume {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 0.9em;
+    color: #333;
+}
