@@ -2,7 +2,7 @@ import React, { useState, useCallback } from 'react';
 import './Login.css';
 import cybersecurityBg from '../assets/cybersecurity-bg.jpg';
 
-const API_URL = 'http://localhost:4000/login';
+const API_URL = process.env.REACT_APP_API_URL ||'http://localhost:4000'+'/login';
 
 function Login({ onLogin }) {
     const [username, setUsername] = useState('');
